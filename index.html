@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KPI</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <main class="holder">
+        <div class="wrapper">
+          <div class="header">
+            <div class="header__nav-left">
+              <!-- <h1 class="nav-logo">makers</h1> -->
+              <img class="makers-logo" src="./img/makers-logo.JPG" alt="" />
+              <div class="nav-phone__block">
+                <i class="nav-phone__icon"></i>
+                <span class="nav-phone__number">0501 619 690</span>
+              </div>
+            </div>
+            <div class="header__nav-right">
+              <ul class="menu">
+                <li class="menu__item">
+                  <a href="#vlastelin">Властелин JS</a>
+                </li>
+                <li class="menu__item"><a href="#add-kpi">Add KPI</a></li>
+                <li class="menu__item">
+                  <a href="#student-info">Student Info</a>
+                </li>
+                <li class="menu__item"><a href="#search">Search</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="students-wrapper">
+            <form
+              class="myForm"
+              id="add-kpi"
+              action="http://localhost:8000/students"
+              method="POST"
+            >
+              <h2>ADD STUDENT and KPI</h2>
+              <div>
+                <span>Firstname: </span>
+                <input
+                  type="text"
+                  name="firstName"
+                  class="firstName"
+                  placeholder="Firstname"
+                />
+              </div>
+              <div>
+                <span>Lastname: </span>
+                <input
+                  type="text"
+                  name="lastName"
+                  class="lastName"
+                  placeholder="Lastname"
+                />
+              </div>
+              <div>
+                <span>Late</span>
+                <input
+                  type="number"
+                  name="late"
+                  class="late"
+                  placeholder="Late"
+                />
+              </div>
+              <div>
+                <span>Tasks</span>
+                <input
+                  type="number"
+                  name="tasks"
+                  class="tasks"
+                  placeholder="Tasks"
+                />
+              </div>
+              <div>
+                <span>Presentation</span>
+                <input
+                  type="number"
+                  name="presentation"
+                  class="presentation"
+                  placeholder="Presentation"
+                />
+              </div>
+              <div>
+                <span>Interview</span>
+                <input
+                  type="number"
+                  name="interview"
+                  class="interview"
+                  placeholder="Interview"
+                />
+              </div>
+              <div>
+                <span>Test</span>
+                <input
+                  type="number"
+                  name="test"
+                  class="test"
+                  placeholder="Test"
+                />
+              </div>
+              <div class="kpi-none">
+                <span>KPI</span>
+                <input type="number" name="kpi" class="kpi" placeholder="KPI" />
+              </div>
+              <input type="submit" class="btn" value="Add" />
+            </form>
+            <div class="search" id="search">
+              <input type="text" name="name" required />
+              <button class="search-btn">Search</button>
+              <div class="result-list" id="">
+                <ul class="result"></ul>
+                <div class="pagination">
+                  <button class="prev-btn-search">Previous page</button>
+                  <button class="next-btn-search">Next page</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <table class="table" id="student-info">
+            <thead>
+              <tr>
+                <th class="kpi-head">Firstname</th>
+                <th class="kpi-head">Lastname</th>
+                <th class="kpi-head">Late</th>
+                <th class="kpi-head">Tasks</th>
+                <th class="kpi-head">Present</th>
+                <th class="kpi-head">Inter</th>
+                <th class="kpi-head">Test</th>
+                <th class="kpi-head">KPI</th>
+                <th class="kpi-head">Edit</th>
+                <th class="kpi-head">Delete</th>
+              </tr>
+            </thead>
+            <tbody class="tbody"></tbody>
+            <tfoot></tfoot>
+          </table>
+          <div class="popup-fade">
+            <div class="popup">
+              <a href="#" class="popup-close">Close</a>
+              <form class="inputs">
+                <div>
+                  <span>Firstname: </span>
+                  <input
+                    type="text"
+                    name="firstName"
+                    class="firstName"
+                    placeholder="Firstname"
+                  />
+                </div>
+                <div>
+                  <span>Lastname: </span>
+                  <input
+                    type="text"
+                    name="lastName"
+                    class="lastName"
+                    placeholder="Lastname"
+                  />
+                </div>
+                <div>
+                  <span>Late</span>
+                  <input
+                    type="number"
+                    name="late"
+                    class="late"
+                    placeholder="Late"
+                  />
+                </div>
+                <div>
+                  <span>Tasks</span>
+                  <input
+                    type="number"
+                    name="tasks"
+                    class="tasks"
+                    placeholder="Tasks"
+                  />
+                </div>
+                <div>
+                  <span>Presentation</span>
+                  <input
+                    type="number"
+                    name="presentation"
+                    class="presentation"
+                    placeholder="Presentation"
+                  />
+                </div>
+                <div>
+                  <span>Interview</span>
+                  <input
+                    type="number"
+                    name="interview"
+                    class="interview"
+                    placeholder="Interview"
+                  />
+                </div>
+                <div>
+                  <span>Test</span>
+                  <input
+                    type="number"
+                    name="test"
+                    class="test"
+                    placeholder="Test"
+                  />
+                </div>
+                <input type="submit" class="btn" value="Add" />
+              </form>
+              <canvas
+                id="myChart"
+                style="display: block; height: 400px; width: 600px;"
+                width="500"
+                height="406"
+              ></canvas>
+            </div>
+          </div>
+          <div class="pagination">
+            <button class="prev-btn">Previous page</button>
+            <button class="next-btn">Next page</button>
+          </div>
+        </div>
+        <div class="our-team" id="vlastelin">
+          <h2>Властелин JS Team</h2>
+          <ul class="team">
+            <li class="team-entry" id="aidai">
+              <div class="team-image">
+                <div class="team-content">
+                  <div class="team-image-action">
+                    <div class="team-zoom"></div>
+                  </div>
+                </div>
+              </div>
+              <a class="team-simpa" href="#aidai"></a>
+              <div class="team-data">
+                <div class="team-content">
+                  <h3>Aidai</h3>
+                  <h4>TeamLead</h4>
+                </div>
+              </div>
+            </li>
+            <li class="team-entry" id="adilet">
+              <div class="team-image">
+                <div class="team-content">
+                  <div class="team-image-action">
+                    <div class="team-zoom"></div>
+                  </div>
+                </div>
+              </div>
+              <a class="team-simpa" href="#adilet"></a>
+              <div class="team-data">
+                <div class="team-content">
+                  <h3>Adilet</h3>
+                  <h4>Человек-невидимка</h4>
+                  <p>Почти сделал пагинацию и удаление</p>
+                </div>
+              </div>
+            </li>
+            <li class="team-entry" id="malik">
+              <div class="team-image">
+                <div class="team-content">
+                  <div class="team-image-action">
+                    <div class="team-zoom"></div>
+                  </div>
+                </div>
+              </div>
+              <a class="team-simpa" href="#malik"></a>
+              <div class="team-data">
+                <div class="team-content">
+                  <h3>Malik</h3>
+                  <h4>Красавчик</h4>
+                  <p>Молодой перспективный холостяк, завидный жених! ^_*</p>
+                </div>
+              </div>
+            </li>
+            <li class="team-entry" id="argen">
+              <div class="team-image">
+                <div class="team-content">
+                  <div class="team-image-action">
+                    <div class="team-zoom"></div>
+                  </div>
+                </div>
+              </div>
+              <a class="team-simpa" href="#argen"></a>
+              <div class="team-data">
+                <div class="team-content">
+                  <h3>Argen</h3>
+                  <h4>ПсевдоДиаграммист</h4>
+                  <p>
+                    Молодой перспективный ПсевдоДиаграммист, незавидный жених!
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="team-entry" id="aiana">
+              <div class="team-image">
+                <div class="team-content">
+                  <div class="team-image-action">
+                    <div class="team-zoom"></div>
+                  </div>
+                </div>
+              </div>
+              <a class="team-simpa" href="#aiana"></a>
+              <div class="team-data">
+                <div class="team-content">
+                  <h3>Aiana</h3>
+                  <h4>Дизайнер</h4>
+                  <p>Тоже молодая перспективная ПсевдоПагинаторша</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <canvas
+          id="myChart"
+          style="display: block; height: 400px; width: 550px;"
+          width="600"
+          height="406"
+        ></canvas>
+      </main>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

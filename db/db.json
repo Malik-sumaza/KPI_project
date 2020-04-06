@@ -1,0 +1,125 @@
+{
+  "students": [
+    {
+      "firstName": "Аяна",
+      "lastName": "Жумабаева",
+      "late": "100",
+      "tasks": "88",
+      "presentation": "90",
+      "interview": "100",
+      "test": "100",
+      "kpi": "94",
+      "id": 2
+    },
+    {
+      "firstName": "Арген",
+      "lastName": "Озгонбеков",
+      "late": "90",
+      "tasks": "100",
+      "presentation": "100",
+      "interview": "90",
+      "test": "80",
+      "kpi": "92",
+      "id": 4
+    },
+    {
+      "firstName": "Малик",
+      "lastName": "Сумаза",
+      "late": "100",
+      "tasks": "100",
+      "presentation": "100",
+      "interview": "70",
+      "test": "89",
+      "kpi": "91.8",
+      "id": 5
+    },
+    {
+      "firstName": "Адилет",
+      "lastName": "Алымбеков",
+      "late": "80",
+      "tasks": "70",
+      "presentation": "100",
+      "interview": "75",
+      "test": "80",
+      "kpi": "81",
+      "id": 6
+    },
+    {
+      "firstName": "Аскар",
+      "lastName": "Болжуров",
+      "late": "80",
+      "tasks": "90",
+      "presentation": "70",
+      "interview": "80",
+      "test": "100",
+      "kpi": "84",
+      "id": 7
+    },
+    {
+      "firstName": "Бек",
+      "lastName": "Беков",
+      "late": "80",
+      "tasks": "70",
+      "presentation": "80",
+      "interview": "90",
+      "test": "100",
+      "kpi": "84",
+      "id": 8
+    },
+    {
+      "firstName": "Петр",
+      "lastName": "Петров",
+      "late": "50",
+      "tasks": "89",
+      "presentation": "56",
+      "interview": "20",
+      "test": "90",
+      "kpi": "61",
+      "id": 9
+    },
+    {
+      "firstName": "Айдай",
+      "lastName": "Беков",
+      "late": "89",
+      "tasks": "59",
+      "presentation": "62",
+      "interview": "13",
+      "test": "100",
+      "kpi": "64.6",
+      "id": 10
+    },
+    {
+      "firstName": "Айдайdd",
+      "lastName": "Pipisasa",
+      "late": "45",
+      "tasks": "67",
+      "presentation": "78",
+      "interview": "88",
+      "test": "92",
+      "kpi": "74",
+      "id": 11
+    },
+    {
+      "firstName": "Айдай",
+      "lastName": "asdfeee",
+      "late": "34",
+      "tasks": "56",
+      "presentation": "78",
+      "interview": "89",
+      "test": "56",
+      "kpi": "62.6",
+      "id": 12
+    },
+    {
+      "firstName": "Айдай",
+      "lastName": "Исраилова",
+      "late": "78",
+      "tasks": "89",
+      "presentation": "90",
+      "interview": "8",
+      "test": "89",
+      "kpi": "71",
+      "id": 16
+    }
+  ]
+}
